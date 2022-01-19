@@ -23,8 +23,8 @@ variable "tag_name" {
     default     = "my-ec2-instance" 
 } 
 variable "ami_id" { 
-    description = "AMI for Ubuntu Ec2 instance" 
-    default     = "ami-020db2c14939a8efb" 
+    description = "AMI for Amazon Ec2 instance" 
+    default     = "ami-08e4e35cccc6189f4" 
 }
 variable "versioning" {
     type        = bool
@@ -39,7 +39,7 @@ variable "acl" {
 variable "bucket_prefix" {
     type        = string
     description = "(required since we are not using 'bucket') Creates a unique bucket name beginning with the specified prefix"
-    default     = "my-s3bucket-"
+    default     = "my-s3bucket-4"
 }
 variable "tags" {
     type        = map
