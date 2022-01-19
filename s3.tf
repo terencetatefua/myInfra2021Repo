@@ -1,6 +1,6 @@
-resource "aws_s3_bucket" "my-s3-bucket" {
+resource "aws_s3_bucket" "my-tnt-dev-tf-state-bucket" {
   bucket_prefix = var.bucket_prefix
-  acl = var.acl
+  acl = private
   
    versioning {
     enabled = var.versioning
